@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 16% 70% 1% 1%;
+    grid-template-areas:
+    'l1 l2 l3'
+    'm1 m2 m3'
+    'n1 n1 n1'
+    'o1 o1 o1';
+}
+
+.titulo {
+    font-family: 'good times', sans-serif;
+    grid-area: l2;
+}
+div.menuSection {
+    grid-area: l3;
+}
+
+div.textoavulso{
+    grid-area: m1;
+    list-style-position: inside;
+    font-family: monospace, sans-serif;
+    background-color: #C4C7F2;  
+    color:#070540;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(253, 251, 251, 0.747);
+    text-indent: 30px;
+    line-height: 0.9em;
+    width: 400px;
+    margin: auto;
+}
+
+.calculadora{
+    grid-area: m2;
+    background-color: #C4C7F2;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.871);
+}
+
+.calculadora > h1 {
+    color: black;
+    font-family: monospace, sans-serif;
+    margin: 0;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 3px;
+    border: none;
+    color: white;
+    background-color: #382B8C;
+    box-shadow: 0px 3px 1px 0px rgba(11, 8, 89, 0.871);
+    border-radius: 10px;
+}
+
+.botao:hover{
+    background-color: #070540;
+}
+
+.botao:active {
+    box-shadow: 0px 1px 1px 0px rgb(35, 33, 85);
+    
+}
+#resultado{
+    width: 90%;
+    height: 30px;
+    background-color: rgba(156, 156, 156, 0.226);
+    box-shadow: 1px 1px 5px rgba(11, 8, 89, 0.871);
+    margin: 10px;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+}
+#conversao{
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+    background-color: rgba(156, 156, 156, 0.226);
+    box-shadow: 1px 1px 5px rgba(11, 8, 89, 0.871);
+    color: black;
+    text-align: right;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    text-indent: 30px;
+}
+a:hover{
+    color: #49F2E1;
+    background-color: #1f38361f;
+    transition-duration: 1.5s;
+}
+
+footer { /*Rodapé*/
+    grid-area: o1;
+    border-radius: none;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/*navegação*/
+
+/*div.menuSection {
+}*/ 
+
+div.menuToggle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.um, .dois, .tres {
+    background-color: #fff;
+    height: 10px;
+    margin: 10px 10px;
+    transition-duration: 0.3s;
+}
+
+.menuToggle:hover{
+    background-color: cadetblue;
+    width: 250px;
+    height: 250px;
+    margin: 15px 15px;
+    border-radius: 15px;
+}
+
+nav { 
+    display: none;
+}
+
+/*Media Queries*/
+@media (max-width:768px) {
+    .titulo {
+        grid-area: l2;
+        font-size: 1.5em;
+    }
+    .menuToggle:hover{
+        width: 150px;
+    }
+    .calculadora{
+        grid-area: m2;
+    }
+
+    div.textoavulso{
+        grid-area: n1;
+    }
+
+    footer {
+        grid-area: o1;
+        width: 100%;
+    }
+
+    body {
+        grid-template-rows: 10% 62% 21% 10%;
+    }
+
+}

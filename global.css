@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'good times';
+    src: url(fonte/good_times/good\ times\ rg.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html { /*VALIDAR*/
+    --bg: #070540;
+    --lilas: #C4C7F2;
+    --verde: #49F2E1;
+    --lclaro: #c4c7f293;
+}
+
+body{ /*Configuração principal*/
+    hyphens: auto;
+    word-break: break-word;
+    background-color:#070540;
+    color: white;
+}
+
+h1{ /*Títulos principais*/
+    margin: 20px;
+    text-align: center;
+}
+
+p{  /*disposição dos textos*/
+    font-family: monospace, sans-serif;
+    background-color: #C4C7F2;
+    color:#070540;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(253, 251, 251, 0.747);
+    text-indent: 30px;
+    line-height: 0.9em;
+}
+
+
+
+
+

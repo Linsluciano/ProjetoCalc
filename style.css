@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+a{  /*links*/
+    font-family: monospace;
+    text-decoration: none;  
+    color: white;
+    border-radius: 8px;
+    margin: 4px;
+    padding: 4px;
+}
+h1{ /*Título principal*/
+    font-family: 'good times', sans-serif;
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+}
+img{ /*config da imagem*/
+    min-width: 400px;
+    max-width: 800px;   
+    padding: 18px; 
+}
+
+p#textodois{
+    width: 200px;
+}
+p#textoum{
+    width: 200px;
+}
+.container {
+    display: flex;
+    white-space: normal; 
+    text-align: justify;
+    justify-content: center;
+    margin: 20px;
+    border: 20px;
+}
+a:hover{
+    color: #49F2E1;
+    background-color: #1f38361f;
+    transition-duration: 1.5s;
+}
+/*Box lateral Parágrafo, Pesquisa, Links*/
+aside{
+    padding: 20px;
+    margin-left: -20px;
+}
+aside > p{
+    width: 150px;
+    margin-top: 30px;
+}
+aside > a {
+    display: block;
+    text-align: center;
+}
+aside > a:hover{
+    background-color:#c4c7f293;
+    transition-duration: 1.5s;
+}
+/*Barra de pesquisa*/
+input{
+    background-color: #49F2E1;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    border-radius: 18px;
+    font-family: cursive,sans-serif;
+    color: #382B8C;
+    margin-bottom: 20px;
+}
+/*Botão Calcular*/
+a#calculadora{ 
+    display: block;
+    background-color: #49F2E1;
+    color: #382B8C;
+    text-align: center;
+    font-family: 'good times', sans-serif;
+    font-size: 1em;
+    text-shadow: 1px 1px 3px rgba(27, 20, 20, 0.192);
+    margin: auto;
+    width: 200px;
+    border-radius: 15px;
+}
+#calculadora:hover {
+    background-color:hsla(174, 87%, 62%, 0.726);
+    color: #ffffff;
+    transition-duration: 1s;
+}
+
+/*navegação*/
+.menuSection {
+    display: flex;
+    justify-content: right;
+}
+
+.menuToggle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.um, .dois, .tres {
+    background-color: #fff;
+    height: 10px;
+    margin: 10px 10px;
+    transition-duration: 0.3s;
+}
+
+.menuToggle:hover{
+    display: block;
+    background-color: cadetblue;
+    width: 250px;
+    height: 250px;
+    margin: 15px 15px;
+    border-radius: 15px;
+}
+
+nav { 
+    display: none;
+}
+
+
+footer { /*Rodapé*/
+    width: 100%;
+    bottom: 0;
+    border-radius: none;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 50px; 
+}
+
+
+/*Media Queries*/
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        align-self: center;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+    asa {
+        align-items: center;
+    }
+    input{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    div > p#textoum {
+        width: 400px;
+    }
+    aside > #textodois { 
+        width: 400px;
+    }
+}
