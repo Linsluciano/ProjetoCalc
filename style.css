@@ -87,7 +87,7 @@ a#calculadora{
 }
 
 /*navegação*/
-.menuSection {
+/*.menuSection {
     display: flex;
     justify-content: right;
 }
@@ -112,7 +112,7 @@ a#calculadora{
     height: 250px;
     margin: 15px 15px;
     border-radius: 15px;
-}
+}*/
 
 nav { 
     display: none;
